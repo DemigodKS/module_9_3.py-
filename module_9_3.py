@@ -7,4 +7,6 @@ print(list(first_result))
 
 second_result = (len(first[i])==len(second[i]) for i in range(len(first)))
 print(list(second_result))
-
+#2 вариант
+second_result = (len(first[x])==len(second[y]) for x, y in zip(range(len(first)),range(len(second))))
+print(list(second_result))
